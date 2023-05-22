@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">First App</string>
+    <string name="msg001">{0} is required</string>
+    <string-array name="spinnerArray">
+        <item>Ha Noi</item>
+        <item>Ho Chi Minh</item>
+        <item>Da Nang</item>
+        <item>Quy Nhon</item>
+        <item>Can Tho</item>
+    </string-array>
+</resources>
