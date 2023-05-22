@@ -2,7 +2,9 @@ package com.binhph.firstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class ProfileDetailActivity extends AppCompatActivity {
 
@@ -10,5 +12,10 @@ public class ProfileDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_detail);
+        Intent intent = getIntent();
+        String userName = intent.getStringExtra(IntentKeys.USER_NAME);
+        TextView txtFirstName = findViewById(R.id.txtFirst);
+        txtFirstName.setText("User name is " + userName);
+        String password = intent.getStringExtra(IntentKeys.PASSWORD);
     }
 }
