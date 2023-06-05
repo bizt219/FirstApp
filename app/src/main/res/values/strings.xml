@@ -8,4 +8,13 @@
         <item>Quy Nhon</item>
         <item>Can Tho</item>
     </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello World</string>
+    <string name="my_app_title">Demo App</string>
+    <string name="import_camera">Import Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="send">Send</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="share">Share</string>
 </resources>

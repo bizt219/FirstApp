@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //Uri uri = Uri.parse("https://www.google.com.vn");
         //Intent i = new Intent(Intent.ACTION_VIEW, uri);
 
-        Intent intent = new Intent(this, ProfileDetailActivity.class);
+        Intent intent = new Intent(this, ProductListActivity.class);
         intent.putExtra(IntentKeys.USER_NAME, userName);
         intent.putExtra(IntentKeys.PASSWORD, passWord);
         startActivity(intent);
@@ -102,5 +102,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onDestroy() {
         super.onDestroy();
         campus = null;
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 2){
+            String msg = data.getStringExtra("MSG");
+            Toast.makeText(this, "Message sent from Profile Detail", Toast.LENGTH_SHORT).show();
+        }
     }
 }
